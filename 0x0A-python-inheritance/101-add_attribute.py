@@ -1,15 +1,11 @@
 #!/usr/bin/python3
-"""Defines the MyInt class"""
+"""Defines a function that safely adds attributes to an object"""
 
 
-class MyInt(int):
-    """Integer but with == and != reversed"""
-
-    def __init__(self, myint):
-        self.myint = myint
-
-    def __eq__(int1, int2):
-        return int1.myint != int2
-
-    def __ne__(int1, int2):
-        return int1.myint == int2
+def add_attribute(obj, name, value):
+    if type(name) is not str:
+        raise TypeError("can't add new attribute")
+    try:
+        exec("obj.{} = value".format(name))
+    except:
+        raise TypeError("can't add new attribute")
