@@ -1,10 +1,8 @@
 #!/usr/bin/python3
-"""Defines a function that prints number of lines in a UTF8 text file"""
+"""Defines a function that writes a string to a file"""
 
 
-def number_of_lines(filename=""):
-    with open(filename, "r") as f:
-        lines = 0
-        for line in f:
-            lines += 1
-        return lines
+def write_file(filename="", text=""):
+    """Writes a string to a given file"""
+    with open(filename, "w") as f:
+        return f.write(text)
