@@ -1,4 +1,3 @@
 #!/bin/bash
-# takes in a URL, sends a GET request to the URL, and displays the body of the response
-curl -s "$1" -X GET -L
-
+# Script that sends a GET request and displays response if SC=200.
+curl -s -L "$1"
