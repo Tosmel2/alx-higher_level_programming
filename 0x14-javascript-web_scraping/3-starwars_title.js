@@ -8,4 +8,3 @@ if (process.argv.length > 2) {
 	  else console.log(JSON.parse(body).title);
   });
 }
-
