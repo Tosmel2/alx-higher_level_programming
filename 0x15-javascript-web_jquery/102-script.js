@@ -6,4 +6,3 @@ window.addEventListener('DOMContentLoaded', function () {
     });
   });
 });
-
