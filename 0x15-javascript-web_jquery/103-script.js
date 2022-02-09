@@ -15,4 +15,3 @@ window.addEventListener('DOMContentLoaded', function () {
     });
   });
 });
-
