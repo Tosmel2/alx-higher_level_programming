@@ -1,15 +1,13 @@
 #!/usr/bin/python3
-"""Defines the MyInt class"""
+""" New class """
 
 
 class MyInt(int):
-    """Integer but with == and != reversed"""
+    """ My int inherits from int """
+    def __eq__(self, num):
+        """ Function for equals """
+        return(int(self) != int(num))
 
-    def __init__(self, myint):
-        self.myint = myint
-
-    def __eq__(int1, int2):
-        return int1.myint != int2
-
-    def __ne__(int1, int2):
-        return int1.myint == int2
+    def __ne__(self, num):
+        """ Function for not equals """
+        return (int(self) == int(num))

@@ -1,8 +1,10 @@
 #!/usr/bin/python3
-"""Defined a list class with member function that prints a sorted list"""
+"""  New class """
 
 
 class MyList(list):
+    """ Mylist class that inherist from list """
+
     def print_sorted(self):
-        """Prints MyList, sorted"""
+        """ Fucntion that prints a sorted list """
         print(sorted(self))
